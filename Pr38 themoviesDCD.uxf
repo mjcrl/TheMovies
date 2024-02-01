@@ -45,8 +45,8 @@ location : Cinema)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>175</x>
-      <y>84</y>
+      <x>721</x>
+      <y>56</y>
       <w>189</w>
       <h>77</h>
     </coordinates>
@@ -197,20 +197,6 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>259</x>
-      <y>154</y>
-      <w>35</w>
-      <h>77</h>
-    </coordinates>
-    <panel_attributes>lt=-
-m1=1..*
-m2=1..*
-</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
       <x>609</x>
       <y>280</y>
       <w>91</w>
@@ -225,40 +211,40 @@ m2=0..*
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>777</x>
-      <y>147</y>
+      <x>735</x>
+      <y>182</y>
       <w>35</w>
-      <h>112</h>
+      <h>77</h>
     </coordinates>
     <panel_attributes>lt=-
 m2=1..*
 </panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;140.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>392</x>
-      <y>140</y>
-      <w>406</w>
+      <y>175</y>
+      <w>364</w>
       <h>35</h>
     </coordinates>
     <panel_attributes>lt=-
 
 </panel_attributes>
-    <additional_attributes>10.0;20.0;560.0;20.0</additional_attributes>
+    <additional_attributes>10.0;20.0;500.0;20.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
       <x>392</x>
-      <y>147</y>
+      <y>182</y>
       <w>21</w>
-      <h>140</h>
+      <h>105</h>
     </coordinates>
     <panel_attributes>lt=-
 </panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;180.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -271,5 +257,19 @@ m2=1..*
     <panel_attributes>lt=-
 m1=1</panel_attributes>
     <additional_attributes>60.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>805</x>
+      <y>126</y>
+      <w>35</w>
+      <h>133</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=0..*
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
   </element>
 </diagram>
