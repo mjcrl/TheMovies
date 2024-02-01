@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pr38_TheMovies.Models
 {
-    public class Booking : SuperObject
+    public class Booking
     {
         public int TicketAmount { get; set; }
         public string Email { get; set; }

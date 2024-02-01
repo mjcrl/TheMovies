@@ -15,7 +15,7 @@ namespace Pr38_TheMovies.Models
         public BookingRepository()
         {
             bookings = new ObservableCollection<Booking>();
-            // initRepo();
+            initRepo();
         }
 
         private void initRepo()
@@ -48,6 +48,12 @@ namespace Pr38_TheMovies.Models
             Booking b = new Booking(ticketAmount, email, phoneNumber, showingTBS);
             bookings.Add(b);
             return b;
+        }
+
+        public Booking AddBooking(Booking booking)
+        {
+            bookings.Add(booking);
+            return booking;
         }
 
         public void DeleteBooking(Booking booking)

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pr38_TheMovies.Models
 {
-    public class Cinema : SuperObject
+    public class Cinema
     {
         public string City { get; set; }
         public string Name { get; set; }

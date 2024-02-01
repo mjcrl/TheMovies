@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Pr38_TheMovies.Models
 {
-    public class Showing : SuperObject
+    public class Showing
     {
         #region Properties
         public DateTime PlayingDate { get; set; }
