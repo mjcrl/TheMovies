@@ -19,6 +19,6 @@ namespace Pr38_TheMovies.Models
 
         private void InitRepo() { }
 
-        public Showing AddShowing
+        public Showing AddShowing;
     }
 }
