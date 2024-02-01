@@ -16,6 +16,12 @@ namespace Pr38_TheMovies.Models
 
         #endregion
 
+
+        public override string ToString()
+        {
+            return $"{SeatCapacity}, {PlayingDate.ToString()}";
+        }
+
         #region Constructors
         public Showing(DateTime playingDate,  int seatCapacity, Movie movieTBS, Cinema location)
         {

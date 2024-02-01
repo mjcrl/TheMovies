@@ -15,7 +15,19 @@ namespace Pr38_TheMovies.Models
         public ShowingRepository()
         {
             showings = new ObservableCollection<Showing>();
-            // InitRepo();
+            Movie m1 = new Movie("peepee", "poopoo", "53", "David", DateTime.Parse("03-04-2020 21:00:00"));
+            Movie m2 = new Movie("pingpong filmen", "Horror", "2 minutter", "Michael Bay", DateTime.Parse("02-02-2024 16:30:00"));
+            Movie m3 = new Movie("Avatar 3", "?", "480 minutter", "Steven Spielberg", DateTime.Parse("02-02-2024 16:32:00"));
+            Movie m4 = new Movie("Fast and Furious 19", "Family", "420 minutter", "Optimus Prime", DateTime.Parse("03-03-2056 11:00:00"));
+            Cinema c1 = new Cinema("Odense", "Cinemaxx");
+            Cinema c2 = new Cinema("Odense", "Nordisk Filmbiograf");
+            Cinema c3 = new Cinema("Aarhus", "Imax");
+            Cinema c4 = new Cinema("København", "Pers hjemmebiograf");
+            Showing s1 = new Showing(DateTime.Parse("03-04-2020 23:00:00"), 50, m1, c3);
+            Showing s2 = new Showing(DateTime.Parse("05-11-2024 16:30:00"), 50, m3, c1);
+            Showing s3 = new Showing(DateTime.Parse("07-06-2025 11:20:00"), 50, m2, c3);
+            Showing s4 = new Showing(DateTime.Parse("07-06-2025 11:22:00"), 50, m3, c3);
+            showings.Add(s1); showings.Add(s2); showings.Add(s3); showings.Add(s4);
         }
 
         private void initRepo()
@@ -53,6 +65,11 @@ namespace Pr38_TheMovies.Models
         public void DeleteShowing(Showing showing)
         {
             showings.Remove(showing);
+        }
+
+        public ObservableCollection<Showing> GetAll()
+        {
+            return showings;
         }
     }
 }

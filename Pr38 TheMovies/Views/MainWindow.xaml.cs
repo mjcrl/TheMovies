@@ -1,4 +1,4 @@
-﻿using Pr38_TheMovies.Models;
+﻿using Pr38_TheMovies.ViewModels;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -17,17 +17,13 @@ namespace Pr38_TheMovies
     /// </summary>
     public partial class MainWindow : Window
     {
-        BookingRepository bookingRepository;
+        MainViewModel viewModel;
         public MainWindow()
         {
             InitializeComponent();
-            bookingRepository = new BookingRepository();
-            Movie m = new Movie("peepee", "poopoo", "53", "David", DateTime.Parse("03-04-2020 21:00:00"));
-            Cinema c = new Cinema("Odense", "Cinemaxx");
-            Showing s = new Showing(DateTime.Parse("03-04-2020 21:00:00"), 50, m, c);
-            Booking b = new Booking(4, "perhansen12319@gmail.com", "29239328238923893892", s);
-            bookingRepository.AddBooking(b);
-            bookingRepository.Save();
+            viewModel = new MainViewModel();
+            DataContext = viewModel;
+        
         }
     }
 }

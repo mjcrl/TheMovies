@@ -9,18 +9,90 @@
     Width="800"
     Height="450"
     mc:Ignorable="d">
-    <Grid >
-        <ListBox x:Name="lstbxCity" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="43,100,645,99"/>
-        <ListBox x:Name="lstbxMovie" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="188,100,500,99"/>
-        <ListBox x:Name="lstbxTime" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="344,100,344,99"/>
-        <TextBox x:Name="txtbxName" HorizontalAlignment="Left" Margin="595,100,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="155" Height="29"/>
-        <TextBox x:Name="txtbxPhone" HorizontalAlignment="Left" Margin="595,150,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="155" Height="29"/>
-        <TextBox x:Name="txtbxEmail" HorizontalAlignment="Left" Margin="595,0,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Center" Width="155" Height="29"/>
-        <TextBox x:Name="txtbxSeat" HorizontalAlignment="Left" Margin="595,260,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="155" Height="29"/>
-        <Label x:Name="lblName" Content="Navn" HorizontalAlignment="Left" Margin="522,100,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.387"/>
-        <Label x:Name="lblPhone" Content="Telefon" HorizontalAlignment="Left" Margin="522,150,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.387"/>
-        <Label x:Name="lblEmail" Content="Email" HorizontalAlignment="Left" Margin="522,203,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.387"/>
-        <Label x:Name="lblSeat" Content="Sæder" HorizontalAlignment="Left" Margin="522,260,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.658,0.387"/>
-        <Button Content="Reserver" HorizontalAlignment="Left" Margin="626,305,0,0" VerticalAlignment="Top" Height="30" Width="94"/>
+    <Grid>
+        <ListBox
+            x:Name="lstbxShowings"
+            Margin="109,100,400,99"
+            ItemsSource="{Binding ShowingViewModels, UpdateSourceTrigger=PropertyChanged}"
+            SelectedItem="{Binding SelectedShowing, UpdateSourceTrigger=PropertyChanged}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding SeatCapacity, UpdateSourceTrigger=PropertyChanged}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <TextBox
+            x:Name="txtbxName"
+            Width="155"
+            Height="29"
+            Margin="595,100,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="TextBox"
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="txtbxPhone"
+            Width="155"
+            Height="29"
+            Margin="595,150,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="TextBox"
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="txtbxEmail"
+            Width="155"
+            Height="29"
+            Margin="595,0,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Center"
+            Text="TextBox"
+            TextWrapping="Wrap" />
+        <TextBox
+            x:Name="txtbxSeat"
+            Width="155"
+            Height="29"
+            Margin="595,260,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Text="TextBox"
+            TextWrapping="Wrap" />
+        <Label
+            x:Name="lblName"
+            Margin="522,100,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Navn"
+            RenderTransformOrigin="0.658,0.387" />
+        <Label
+            x:Name="lblPhone"
+            Margin="522,150,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Telefon"
+            RenderTransformOrigin="0.658,0.387" />
+        <Label
+            x:Name="lblEmail"
+            Margin="522,203,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Email"
+            RenderTransformOrigin="0.658,0.387" />
+        <Label
+            x:Name="lblSeat"
+            Margin="522,260,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Sæder"
+            RenderTransformOrigin="0.658,0.387" />
+        <Button
+            Width="94"
+            Height="30"
+            Margin="626,305,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Reserver" />
     </Grid>
 </Window>
