@@ -20,24 +20,10 @@ namespace Pr38_TheMovies.Models
 
         private void initRepo()
         {
-            using StreamReader myReader = new StreamReader("Pr38_TheMoviesMedBilletAntal.csv");
+            DataHandler.initRepo();
+            if (bookings != null)
             {
-                string line = myReader.ReadLine();
-                Movie movie = null;
-                Showing showing = null;
-                Booking booking = null;
-                while (line != null)
-                {
-                    string[] parts = line.Split(';');
-                    movie = new Movie(parts[3], parts[4], parts[5], parts[6], DateTime.Parse(parts[7]) );
-                    showing = new Showing(DateTime.Parse(parts[2]), 50, movie);
-                    booking = new Booking(int.Parse(parts[10]), parts[8], parts[9], showing);
-                    if (booking != null )
-                    {
-                        bookings.Add(booking);
-                    }
-                    line = myReader.ReadLine();
-                }
+                bookings.Add();
             }
         }
 
