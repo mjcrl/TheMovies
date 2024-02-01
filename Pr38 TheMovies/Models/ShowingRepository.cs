@@ -19,6 +19,16 @@ namespace Pr38_TheMovies.Models
 
         private void InitRepo() { }
 
-        public Showing AddShowing
+        public Showing AddShowing(DateTime playingDate, int seatCapacity, Movie movieTBS)
+        {
+            Showing s = new Showing(playingDate, seatCapacity, movieTBS);
+            showings.Add(s);
+            return s;
+        }
+
+        public void DeleteShowing(Showing showing)
+        {
+            showings.Remove(showing);
+        }
     }
 }
