@@ -22,7 +22,9 @@ namespace Pr38_TheMovies.Models
         }
         public string GetString()
         {
-            return $"{ShowingTBS.Location.Name};{ShowingTBS.Location.City};{ShowingTBS.PlayingDate.ToString()};{}
+            return $"{ShowingTBS.Location.Name};{ShowingTBS.Location.City};{ShowingTBS.PlayingDate.ToString()};" +
+                $"{ShowingTBS.MovieTBS.Title};{ShowingTBS.MovieTBS.Genre};{ShowingTBS.MovieTBS.Duration};" +
+                $"{ShowingTBS.MovieTBS.Instructor};{ShowingTBS.MovieTBS.Premiere.ToString()};{Email};{PhoneNumber};{TicketAmount}";
         }
     }
 }
