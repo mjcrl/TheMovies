@@ -122,7 +122,8 @@ premiere : DateTime) : Movie
 + BookingRepository()
 - initRepo()
 + AddBooking(ticketAmount : int, 
-email : string, phoneNumber : string) : Booking
+email : string, phoneNumber : string,
+showingTBS : Showing) : Booking
 + DeleteBooking(booking : Booking)</panel_attributes>
     <additional_attributes/>
   </element>
@@ -141,7 +142,8 @@ email : string, phoneNumber : string) : Booking
 + ShowingRepository()
 - initRepo()
 + AddShowing(playingDate : DateTime,
-seatCapacity : int) : Showing
+seatCapacity : int, movieTBS : Movie)
+: Showing
 + DeleteShowing(showing : Showing)</panel_attributes>
     <additional_attributes/>
   </element>

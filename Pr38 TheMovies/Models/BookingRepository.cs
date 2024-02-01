@@ -22,11 +22,16 @@ namespace Pr38_TheMovies.Models
 
         }
 
-        public Booking AddBooking(int ticketAmount, string email, string phoneNumber)
+        public Booking AddBooking(int ticketAmount, string email, string phoneNumber, Showing showingTBS)
         {
-            Booking b = new Booking(ticketAmount, email, phoneNumber);
+            Booking b = new Booking(ticketAmount, email, phoneNumber, showingTBS);
             bookings.Add(b);
             return b;
+        }
+
+        public void DeleteBooking(Booking booking)
+        {
+            bookings.Remove(booking);
         }
     }
 }
