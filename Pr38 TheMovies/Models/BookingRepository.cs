@@ -33,5 +33,10 @@ namespace Pr38_TheMovies.Models
         {
             bookings.Remove(booking);
         }
+
+        public void save()
+        {
+
+        }
     }
 }
