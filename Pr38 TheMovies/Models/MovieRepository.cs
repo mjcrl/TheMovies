@@ -3,18 +3,19 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using System.IO;
 using System.Linq;
+using System.Runtime.CompilerServices;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace Pr38_TheMovies.Models
 {
-    public class ShowingRepository
+    public class MovieRepository
     {
-        private ObservableCollection<Showing> showings;
+        private ObservableCollection<Movie> movies;
 
-        public ShowingRepository()
+        public MovieRepository()
         {
-            showings = new ObservableCollection<Showing>();
+            movies = new ObservableCollection<Movie>();
             // InitRepo();
         }
 
@@ -36,23 +37,23 @@ namespace Pr38_TheMovies.Models
                     booking = new Booking(int.Parse(parts[10]), parts[8], parts[9], showing);
                     if (booking != null)
                     {
-                        showings.Add(showing);
+                        movies.Add(movie);
                     }
                     line = myReader.ReadLine();
                 }
             }
         }
 
-        public Showing AddShowing(DateTime playingDate, int seatCapacity, Movie movieTBS)
+        public Movie AddMovie(string title, string genre, string duration, string instructor, DateTime premiere)
         {
-            Showing s = new Showing(playingDate, seatCapacity, movieTBS);
-            showings.Add(s);
-            return s;
+            Movie m = new Movie(title, genre, duration, instructor, premiere);
+            movies.Add(m);
+            return m;
         }
 
-        public void DeleteShowing(Showing showing)
+        public void DeleteMovie(Movie movie)
         {
-            showings.Remove(showing);
+            movies.Remove(movie);
         }
     }
 }
