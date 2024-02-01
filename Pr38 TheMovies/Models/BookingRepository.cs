@@ -57,7 +57,14 @@ namespace Pr38_TheMovies.Models
 
         public void save()
         {
-
+            using StreamWriter myWriter = new StreamWriter("Pr38_TheMoviesMedBilletAntal.csv");
+            {
+                foreach (Booking booking in bookings)
+                {
+                    string output = booking.GetString();
+                    myWriter.WriteLine(output);
+                }
+            }
         }
     }
 }
