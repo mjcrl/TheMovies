@@ -19,7 +19,7 @@ namespace Pr38_TheMovies.Models
 
         public override string ToString()
         {
-            return $"{SeatCapacity}, {PlayingDate.ToString()}";
+            return $"{MovieTBS.Title}, {MovieTBS.Genre} \n{Location.Name} {Location.City}.\nTidspunkt: {PlayingDate.ToString()}\nVarighed: {MovieTBS.Duration} ";
         }
 
         #region Constructors

@@ -18,7 +18,7 @@
             <ListBox.ItemTemplate>
                 <DataTemplate>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="{Binding SeatCapacity, UpdateSourceTrigger=PropertyChanged}" />
+                        <TextBlock Text="{Binding TheStringofTheShowing, UpdateSourceTrigger=PropertyChanged}" />
                     </StackPanel>
                 </DataTemplate>
             </ListBox.ItemTemplate>

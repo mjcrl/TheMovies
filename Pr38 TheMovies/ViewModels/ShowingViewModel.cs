@@ -11,24 +11,16 @@ namespace Pr38_TheMovies.ViewModels
     public class ShowingViewModel : INotifyPropertyChanged
     {
         private Showing showing;
-
-        private string seatCapacity;
-
-        public string SeatCapacity
+        public string TheStringofTheShowing
         {
-            get { return seatCapacity; }
-            set 
-            { 
-                seatCapacity = value;
-                OnPropertyChanged("SeatCapacity");
+            get
+            {
+                return showing.ToString();
             }
         }
-
-
         public ShowingViewModel(Showing showing)
         {
             this.showing = showing;
-            SeatCapacity = showing.SeatCapacity.ToString();
         }
 
         #region INotifyPropertyChanged
