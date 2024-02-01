@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -19,7 +20,19 @@ namespace Pr38_TheMovies.Models
 
         private void initRepo()
         {
-
+            using StreamReader myReader = new StreamReader("Pr38_TheMoviesMedBilletAntal.csv");
+            {
+                string line = myReader.ReadLine();
+                Movie movie = null;
+                Showing showing = null;
+                Booking booking = null;
+                while (line != null)
+                {
+                    string[] parts = line.Split(';');
+                    movie = new Movie(parts[3], parts[4], parts[5], parts[6], DateTime.Parse(parts[7]) );
+                    showing = new Showing(DateTime.Parse(parts[2]), 50, );
+                }
+            }
         }
 
         public Booking AddBooking(int ticketAmount, string email, string phoneNumber, Showing showingTBS)
