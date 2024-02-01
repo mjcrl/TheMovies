@@ -35,7 +35,7 @@ namespace Pr38_TheMovies.Models
                     cinema = new Cinema(parts[1], parts[0]);
                     showing = new Showing(DateTime.Parse(parts[2]), 50, movie, cinema);
                     booking = new Booking(int.Parse(parts[10]), parts[8], parts[9], showing);
-                    if (booking != null)
+                    if (movie != null)
                     {
                         movies.Add(movie);
                     }

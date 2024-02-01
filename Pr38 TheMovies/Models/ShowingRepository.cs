@@ -34,7 +34,7 @@ namespace Pr38_TheMovies.Models
                     cinema = new Cinema(parts[1], parts[0]);
                     showing = new Showing(DateTime.Parse(parts[2]), 50, movie, cinema);
                     booking = new Booking(int.Parse(parts[10]), parts[8], parts[9], showing);
-                    if (booking != null)
+                    if (showing != null)
                     {
                         showings.Add(showing);
                     }
@@ -43,9 +43,9 @@ namespace Pr38_TheMovies.Models
             }
         }
 
-        public Showing AddShowing(DateTime playingDate, int seatCapacity, Movie movieTBS)
+        public Showing AddShowing(DateTime playingDate, int seatCapacity, Movie movieTBS, Cinema location)
         {
-            Showing s = new Showing(playingDate, seatCapacity, movieTBS);
+            Showing s = new Showing(playingDate, seatCapacity, movieTBS, location);
             showings.Add(s);
             return s;
         }
