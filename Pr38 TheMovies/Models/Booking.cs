@@ -20,5 +20,9 @@ namespace Pr38_TheMovies.Models
             PhoneNumber = phoneNumber;
             ShowingTBS = showingTBS;
         }
+        public string GetString()
+        {
+            return $"{ShowingTBS.Location.Name};{ShowingTBS.Location.City};{ShowingTBS.PlayingDate.ToString()};{}
+        }
     }
 }
