@@ -21,5 +21,12 @@ namespace Pr38_TheMovies.Models
         {
 
         }
+
+        public Booking AddBooking(int ticketAmount, string email, string phoneNumber)
+        {
+            Booking b = new Booking(ticketAmount, email, phoneNumber);
+            bookings.Add(b);
+            return b;
+        }
     }
 }

@@ -11,14 +11,16 @@ namespace Pr38_TheMovies.Models
         #region Properties
         public DateTime PlayingDate { get; set; }
         public int SeatCapacity { get; set; }
+        public Movie MovieTBS { get; set; }
 
         #endregion
 
         #region Constructors
-        public Showing(DateTime playingDate,  int seatCapacity)
+        public Showing(DateTime playingDate,  int seatCapacity, Movie movieTBS)
         {
             PlayingDate = playingDate;
             SeatCapacity = seatCapacity;
+            MovieTBS = movieTBS;
         }
         #endregion
     }

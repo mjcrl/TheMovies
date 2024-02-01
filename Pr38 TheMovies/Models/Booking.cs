@@ -11,12 +11,14 @@ namespace Pr38_TheMovies.Models
         public int TicketAmount { get; set; }
         public string Email { get; set; }
         public string PhoneNumber { get; set; }
+        public Showing ShowingTBS { get; set; }
 
-        public Booking(int ticketAmount, string email, string phoneNumber)
+        public Booking(int ticketAmount, string email, string phoneNumber, Showing showingTBS)
         {
             TicketAmount = ticketAmount;
             Email = email;
             PhoneNumber = phoneNumber;
+            ShowingTBS = showingTBS;
         }
     }
 }
