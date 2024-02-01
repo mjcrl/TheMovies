@@ -128,7 +128,8 @@ premiere : DateTime) : Movie
 + AddBooking(ticketAmount : int, 
 email : string, phoneNumber : string,
 showingTBS : Showing) : Booking
-+ DeleteBooking(booking : Booking)</panel_attributes>
++ DeleteBooking(booking : Booking)
++ Save()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
