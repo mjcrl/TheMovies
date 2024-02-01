@@ -20,11 +20,7 @@ namespace Pr38_TheMovies.Models
 
         private void initRepo()
         {
-            DataHandler.initRepo();
-            if (bookings != null)
-            {
-                bookings.Add();
-            }
+            bookings.Add((Booking)DataHandler.initRepo("BOOKING"));
         }
 
         public Booking AddBooking(int ticketAmount, string email, string phoneNumber, Showing showingTBS)
