@@ -33,7 +33,10 @@ namespace Pr38_TheMovies
             bookingWindow = new BookingWindow();
             if (bookingWindow.ShowDialog() == true )
             {
+                if (viewModel.SelectedShowing != null)
+                {
 
+                }
             }
             
         }

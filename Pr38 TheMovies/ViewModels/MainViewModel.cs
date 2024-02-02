@@ -11,7 +11,9 @@ namespace Pr38_TheMovies.ViewModels
 {
     public class MainViewModel : INotifyPropertyChanged
     {
+        #region Fields and Properties
         ShowingRepository showingRepository;
+        BookingRepository bookingRepo;
 
         public ObservableCollection<ShowingViewModel> ShowingViewModels { get; set; }
 
@@ -26,7 +28,7 @@ namespace Pr38_TheMovies.ViewModels
                 OnPropertyChanged("SelectedShowing");
             }
         }
-
+        #endregion
 
         public MainViewModel()
         {
@@ -37,6 +39,7 @@ namespace Pr38_TheMovies.ViewModels
                 ShowingViewModels.Add(new ShowingViewModel(s));
             }
         }
+
 
         #region INotifyPropertyChanged
         protected virtual void OnPropertyChanged(string propertyName)
