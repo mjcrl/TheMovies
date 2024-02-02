@@ -23,76 +23,13 @@
                 </DataTemplate>
             </ListBox.ItemTemplate>
         </ListBox>
-        <TextBox
-            x:Name="txtbxName"
-            Width="155"
-            Height="29"
-            Margin="595,100,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Text="TextBox"
-            TextWrapping="Wrap" />
-        <TextBox
-            x:Name="txtbxPhone"
-            Width="155"
-            Height="29"
-            Margin="595,150,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Text="TextBox"
-            TextWrapping="Wrap" />
-        <TextBox
-            x:Name="txtbxEmail"
-            Width="155"
-            Height="29"
-            Margin="595,0,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Center"
-            Text="TextBox"
-            TextWrapping="Wrap" />
-        <TextBox
-            x:Name="txtbxSeat"
-            Width="155"
-            Height="29"
-            Margin="595,260,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Text="TextBox"
-            TextWrapping="Wrap" />
-        <Label
-            x:Name="lblName"
-            Margin="522,100,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Content="Navn"
-            RenderTransformOrigin="0.658,0.387" />
-        <Label
-            x:Name="lblPhone"
-            Margin="522,150,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Content="Telefon"
-            RenderTransformOrigin="0.658,0.387" />
-        <Label
-            x:Name="lblEmail"
-            Margin="522,203,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Content="Email"
-            RenderTransformOrigin="0.658,0.387" />
-        <Label
-            x:Name="lblSeat"
-            Margin="522,260,0,0"
-            HorizontalAlignment="Left"
-            VerticalAlignment="Top"
-            Content="Sæder"
-            RenderTransformOrigin="0.658,0.387" />
         <Button
             Width="94"
             Height="30"
             Margin="626,305,0,0"
             HorizontalAlignment="Left"
             VerticalAlignment="Top"
+            Click="Button_Click"
             Content="Reserver" />
     </Grid>
 </Window>

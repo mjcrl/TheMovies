@@ -10,7 +10,7 @@ namespace Pr38_TheMovies.ViewModels
 {
     public class ShowingViewModel : INotifyPropertyChanged
     {
-        private Showing showing;
+        public Showing showing { get; }
         public string TheStringofTheShowing
         {
             get

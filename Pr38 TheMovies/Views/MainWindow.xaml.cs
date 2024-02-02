@@ -1,4 +1,5 @@
 ﻿using Pr38_TheMovies.ViewModels;
+using Pr38_TheMovies.Views;
 using System.Text;
 using System.Windows;
 using System.Windows.Controls;
@@ -18,12 +19,23 @@ namespace Pr38_TheMovies
     public partial class MainWindow : Window
     {
         MainViewModel viewModel;
+        BookingWindow bookingWindow;
         public MainWindow()
         {
             InitializeComponent();
             viewModel = new MainViewModel();
             DataContext = viewModel;
         
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            bookingWindow = new BookingWindow();
+            if (bookingWindow.ShowDialog() == true )
+            {
+
+            }
+            
         }
     }
 }
