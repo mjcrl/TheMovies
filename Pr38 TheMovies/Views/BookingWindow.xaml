@@ -74,8 +74,22 @@
             VerticalAlignment="Top"
             Content="Sæder"
             RenderTransformOrigin="0.658,0.387" />
-        <Button x:Name="btnAccept" Content="Bekræft" IsDefault="True" HorizontalAlignment="Left" Margin="158,351,0,0" VerticalAlignment="Top" Click="btnAccept_Click"/>
-        <Button x:Name="btnCancel" Content="Fortryd" IsCancel="True" HorizontalAlignment="Left" Margin="273,351,0,0" VerticalAlignment="Top" Click="btnCancel_Click"/>
+        <Button
+            x:Name="btnAccept"
+            Margin="158,351,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="btnAccept_Click"
+            Content="Bekræft"
+            IsDefault="True" />
+        <Button
+            x:Name="btnCancel"
+            Margin="273,351,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Click="btnCancel_Click"
+            Content="Fortryd"
+            IsCancel="True" />
 
 
     </Grid>
