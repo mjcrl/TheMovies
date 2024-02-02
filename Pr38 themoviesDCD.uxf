@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="15.1">
+<diagram program="umlet" version="15.0.0">
   <zoom_level>7</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>175</x>
-      <y>217</y>
+      <x>259</x>
+      <y>189</y>
       <w>189</w>
       <h>119</h>
     </coordinates>
@@ -25,8 +25,8 @@ premiere : DateTime)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>686</x>
-      <y>245</y>
+      <x>770</x>
+      <y>217</y>
       <w>189</w>
       <h>105</h>
     </coordinates>
@@ -45,8 +45,8 @@ location : Cinema)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>721</x>
-      <y>56</y>
+      <x>805</x>
+      <y>28</y>
       <w>189</w>
       <h>77</h>
     </coordinates>
@@ -61,8 +61,8 @@ location : Cinema)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>427</x>
-      <y>245</y>
+      <x>511</x>
+      <y>217</y>
       <w>189</w>
       <h>119</h>
     </coordinates>
@@ -82,8 +82,8 @@ showingTBS : Showing)
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>133</x>
-      <y>28</y>
+      <x>217</x>
+      <y>0</y>
       <w>791</w>
       <h>504</h>
     </coordinates>
@@ -94,8 +94,8 @@ layer=-1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>175</x>
-      <y>392</y>
+      <x>259</x>
+      <y>364</y>
       <w>189</w>
       <h>126</h>
     </coordinates>
@@ -114,8 +114,8 @@ premiere : DateTime) : Movie
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>427</x>
-      <y>392</y>
+      <x>511</x>
+      <y>364</y>
       <w>210</w>
       <h>126</h>
     </coordinates>
@@ -135,8 +135,8 @@ showingTBS : Showing) : Booking
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>686</x>
-      <y>392</y>
+      <x>770</x>
+      <y>364</y>
       <w>189</w>
       <h>126</h>
     </coordinates>
@@ -155,8 +155,8 @@ location : Cinema) : Showing
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>511</x>
-      <y>357</y>
+      <x>595</x>
+      <y>329</y>
       <w>28</w>
       <h>49</h>
     </coordinates>
@@ -169,8 +169,8 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>259</x>
-      <y>329</y>
+      <x>343</x>
+      <y>301</y>
       <w>28</w>
       <h>77</h>
     </coordinates>
@@ -183,8 +183,8 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>777</x>
-      <y>343</y>
+      <x>861</x>
+      <y>315</y>
       <w>28</w>
       <h>63</h>
     </coordinates>
@@ -197,8 +197,8 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>609</x>
-      <y>280</y>
+      <x>693</x>
+      <y>252</y>
       <w>91</w>
       <h>35</h>
     </coordinates>
@@ -211,8 +211,8 @@ m2=0..*
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>735</x>
-      <y>182</y>
+      <x>819</x>
+      <y>154</y>
       <w>35</w>
       <h>77</h>
     </coordinates>
@@ -224,8 +224,8 @@ m2=1..*
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
-      <y>175</y>
+      <x>476</x>
+      <y>147</y>
       <w>364</w>
       <h>35</h>
     </coordinates>
@@ -237,8 +237,8 @@ m2=1..*
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>392</x>
-      <y>182</y>
+      <x>476</x>
+      <y>154</y>
       <w>21</w>
       <h>105</h>
     </coordinates>
@@ -249,8 +249,8 @@ m2=1..*
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>357</x>
-      <y>266</y>
+      <x>441</x>
+      <y>238</y>
       <w>56</w>
       <h>28</h>
     </coordinates>
@@ -261,8 +261,8 @@ m1=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>805</x>
-      <y>126</y>
+      <x>889</x>
+      <y>98</y>
       <w>35</w>
       <h>133</h>
     </coordinates>
@@ -271,5 +271,26 @@ m1=1
 m2=0..*
 </panel_attributes>
     <additional_attributes>10.0;10.0;10.0;170.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>217</x>
+      <y>525</y>
+      <w>532</w>
+      <h>189</h>
+    </coordinates>
+    <panel_attributes>Operation contract
+-
+Operation: ResevérBillet(showingTBS:showing, ticketamount:int, email:string, phonenumber:string,    
+Cross reference: Resevér billeter til en filmforestilling
+Preconditions: Kunden vil gerne reservere billete til en film. 
+
+Postconditions:
+- en ResevérBillet instance RB var oprettet.
+- RB var associeret med den valgte showing.
+- RB.Antal, blev til antal af billetter.
+- RB blev associeret med KundeBeskrivelse basret på email og phonenumber.</panel_attributes>
+    <additional_attributes/>
   </element>
 </diagram>
