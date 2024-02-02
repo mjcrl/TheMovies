@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>10</zoom_level>
+  <zoom_level>6</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>230</x>
-      <y>270</y>
-      <w>270</w>
-      <h>170</h>
+      <x>36</x>
+      <y>216</y>
+      <w>162</w>
+      <h>102</h>
     </coordinates>
     <panel_attributes>Movie
 --
@@ -25,10 +25,10 @@ premiere : DateTime)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>960</x>
-      <y>310</y>
-      <w>270</w>
-      <h>150</h>
+      <x>474</x>
+      <y>240</y>
+      <w>162</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>Showing
 --
@@ -45,10 +45,10 @@ location : Cinema)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>1010</x>
-      <y>40</y>
-      <w>270</w>
-      <h>110</h>
+      <x>504</x>
+      <y>78</y>
+      <w>162</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>Cinema
 --
@@ -61,10 +61,10 @@ location : Cinema)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>590</x>
-      <y>310</y>
-      <w>270</w>
-      <h>170</h>
+      <x>252</x>
+      <y>240</y>
+      <w>162</w>
+      <h>102</h>
     </coordinates>
     <panel_attributes>Booking
 --
@@ -82,10 +82,10 @@ showingTBS : Showing)
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>170</x>
-      <y>0</y>
-      <w>1130</w>
-      <h>720</h>
+      <x>0</x>
+      <y>54</y>
+      <w>678</w>
+      <h>432</h>
     </coordinates>
     <panel_attributes>Model-layer
 layer=-1</panel_attributes>
@@ -94,10 +94,10 @@ layer=-1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>230</x>
-      <y>520</y>
-      <w>270</w>
-      <h>180</h>
+      <x>36</x>
+      <y>366</y>
+      <w>162</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>MovieRepository
 --
@@ -114,10 +114,10 @@ premiere : DateTime) : Movie
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>590</x>
-      <y>520</y>
-      <w>300</w>
-      <h>180</h>
+      <x>252</x>
+      <y>366</y>
+      <w>180</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>BookingRepository
 --
@@ -135,10 +135,10 @@ showingTBS : Showing) : Booking
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>960</x>
-      <y>520</y>
-      <w>270</w>
-      <h>180</h>
+      <x>474</x>
+      <y>366</y>
+      <w>162</w>
+      <h>108</h>
     </coordinates>
     <panel_attributes>ShowingRepository
 --
@@ -155,10 +155,10 @@ location : Cinema) : Showing
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>710</x>
-      <y>470</y>
-      <w>40</w>
-      <h>70</h>
+      <x>324</x>
+      <y>336</y>
+      <w>24</w>
+      <h>42</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=*
@@ -169,10 +169,10 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>350</x>
-      <y>430</y>
-      <w>40</w>
-      <h>110</h>
+      <x>108</x>
+      <y>312</y>
+      <w>24</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=*
@@ -183,10 +183,10 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1090</x>
-      <y>450</y>
-      <w>40</w>
-      <h>90</h>
+      <x>552</x>
+      <y>324</y>
+      <w>24</w>
+      <h>54</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=*
@@ -197,10 +197,10 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>850</x>
-      <y>360</y>
-      <w>130</w>
-      <h>50</h>
+      <x>408</x>
+      <y>270</y>
+      <w>78</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -211,10 +211,10 @@ m2=0..*
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1030</x>
-      <y>220</y>
-      <w>50</w>
-      <h>110</h>
+      <x>516</x>
+      <y>186</y>
+      <w>30</w>
+      <h>66</h>
     </coordinates>
     <panel_attributes>lt=-
 m2=1..*
@@ -224,10 +224,10 @@ m2=1..*
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>540</x>
-      <y>210</y>
-      <w>520</w>
-      <h>50</h>
+      <x>222</x>
+      <y>180</y>
+      <w>312</w>
+      <h>30</h>
     </coordinates>
     <panel_attributes>lt=-
 
@@ -237,10 +237,10 @@ m2=1..*
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>540</x>
-      <y>220</y>
-      <w>30</w>
-      <h>150</h>
+      <x>222</x>
+      <y>186</y>
+      <w>18</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=-
 </panel_attributes>
@@ -249,10 +249,10 @@ m2=1..*
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>490</x>
-      <y>340</y>
-      <w>80</w>
-      <h>40</h>
+      <x>192</x>
+      <y>258</y>
+      <w>48</w>
+      <h>24</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1</panel_attributes>
@@ -261,10 +261,10 @@ m1=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1130</x>
-      <y>140</y>
-      <w>50</w>
-      <h>190</h>
+      <x>576</x>
+      <y>138</y>
+      <w>30</w>
+      <h>114</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -275,10 +275,10 @@ m2=0..*
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>170</x>
-      <y>750</y>
-      <w>760</w>
-      <h>270</h>
+      <x>0</x>
+      <y>504</y>
+      <w>456</w>
+      <h>162</h>
     </coordinates>
     <panel_attributes>Operation contract
 -
@@ -291,6 +291,113 @@ Postconditions:
 - RB var associeret med den valgte showing.
 - RB.Antal, blev til antal af billetter.
 - RB blev associeret med KundeBeskrivelse baseret på email og phonenumber.</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>708</x>
+      <y>54</y>
+      <w>306</w>
+      <h>432</h>
+    </coordinates>
+    <panel_attributes>ViewModel-layer
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLPackage</id>
+    <coordinates>
+      <x>1050</x>
+      <y>54</y>
+      <w>678</w>
+      <h>432</h>
+    </coordinates>
+    <panel_attributes>View-layer
+layer=-1</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>744</x>
+      <y>102</y>
+      <w>198</w>
+      <h>102</h>
+    </coordinates>
+    <panel_attributes>MainViewModel
+--
+- showingRepository : ShowingRepository
+- bookingRepo : BookingRepository
++ ShowingViewModels : ShowingViewModel[0..*]
++ SelectedShowing : ShowingViewModel
+--
++ MainViewModel()
++ AddBooking(ticketAmount : int, email : string, 
+phoneNumber : string, showingTBS : Showing)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>744</x>
+      <y>228</y>
+      <w>198</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>ShowingViewModel
+--
++ Showing : Showing
++ &lt;&lt;get&gt;&gt; TheStringofTheShowing : string
+--
++ ShowingViewModel()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>744</x>
+      <y>306</y>
+      <w>198</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>BookingViewModel
+--
++ PhoneNumber : string
++ Email : string
++ SeatAmount : int
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1092</x>
+      <y>96</y>
+      <w>198</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>MainWindow
+--
+- viewModel : MainViewModel
+- bookingWindow : BookingWindow
+--
++ MainWindow()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>1092</x>
+      <y>168</y>
+      <w>198</w>
+      <h>54</h>
+    </coordinates>
+    <panel_attributes>BookingWindow
+--
++ viewModel : BookingViewModel
+--
++ BookingWindow()</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>
