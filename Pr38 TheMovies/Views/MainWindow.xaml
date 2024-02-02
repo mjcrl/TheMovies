@@ -31,5 +31,12 @@
             VerticalAlignment="Top"
             Click="Button_Click"
             Content="Reserver" />
+        <Label
+            x:Name="lblBekræftet"
+            Margin="617,353,0,0"
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Content="Booking bekræftet!"
+            Visibility="Hidden" />
     </Grid>
 </Window>

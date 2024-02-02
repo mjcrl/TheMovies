@@ -37,6 +37,7 @@ namespace Pr38_TheMovies
                 {
                     viewModel.AddBooking(bookingWindow.viewModel.SeatAmount, bookingWindow.viewModel.Email,
                         bookingWindow.viewModel.PhoneNumber, viewModel.SelectedShowing.Showing);
+                    lblBekræftet.Visibility = Visibility.Visible;
                 }
             }
             
