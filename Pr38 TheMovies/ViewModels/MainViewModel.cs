@@ -33,6 +33,7 @@ namespace Pr38_TheMovies.ViewModels
         public MainViewModel()
         {
             showingRepository = new ShowingRepository();
+            bookingRepo = new BookingRepository();
             ShowingViewModels = new ObservableCollection<ShowingViewModel>();
             foreach (Showing s in showingRepository.GetAll())
             {
@@ -40,7 +41,11 @@ namespace Pr38_TheMovies.ViewModels
             }
         }
 
-
+        public void AddBooking(int ticketAmount, string email, string phoneNumber, Showing showingTBS)
+        {
+            bookingRepo.AddBooking(ticketAmount, email, phoneNumber, showingTBS);
+            bookingRepo.Save();
+        }
 
         #region INotifyPropertyChanged
         protected virtual void OnPropertyChanged(string propertyName)

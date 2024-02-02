@@ -10,17 +10,17 @@ namespace Pr38_TheMovies.ViewModels
 {
     public class ShowingViewModel : INotifyPropertyChanged
     {
-        public Showing showing { get; }
+        public Showing Showing { get; }
         public string TheStringofTheShowing
         {
             get
             {
-                return showing.ToString();
+                return Showing.ToString();
             }
         }
         public ShowingViewModel(Showing showing)
         {
-            this.showing = showing;
+            this.Showing = showing;
         }
 
         #region INotifyPropertyChanged
