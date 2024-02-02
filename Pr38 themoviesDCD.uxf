@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<diagram program="umlet" version="15.0.0">
-  <zoom_level>7</zoom_level>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>259</x>
-      <y>189</y>
-      <w>189</w>
-      <h>119</h>
+      <x>230</x>
+      <y>270</y>
+      <w>270</w>
+      <h>170</h>
     </coordinates>
     <panel_attributes>Movie
 --
@@ -25,10 +25,10 @@ premiere : DateTime)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>770</x>
-      <y>217</y>
-      <w>189</w>
-      <h>105</h>
+      <x>960</x>
+      <y>310</y>
+      <w>270</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>Showing
 --
@@ -45,10 +45,10 @@ location : Cinema)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>805</x>
-      <y>28</y>
-      <w>189</w>
-      <h>77</h>
+      <x>1010</x>
+      <y>40</y>
+      <w>270</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>Cinema
 --
@@ -61,10 +61,10 @@ location : Cinema)</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>511</x>
-      <y>217</y>
-      <w>189</w>
-      <h>119</h>
+      <x>590</x>
+      <y>310</y>
+      <w>270</w>
+      <h>170</h>
     </coordinates>
     <panel_attributes>Booking
 --
@@ -82,10 +82,10 @@ showingTBS : Showing)
   <element>
     <id>UMLPackage</id>
     <coordinates>
-      <x>217</x>
+      <x>170</x>
       <y>0</y>
-      <w>791</w>
-      <h>504</h>
+      <w>1130</w>
+      <h>720</h>
     </coordinates>
     <panel_attributes>Model-layer
 layer=-1</panel_attributes>
@@ -94,10 +94,10 @@ layer=-1</panel_attributes>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>259</x>
-      <y>364</y>
-      <w>189</w>
-      <h>126</h>
+      <x>230</x>
+      <y>520</y>
+      <w>270</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>MovieRepository
 --
@@ -114,10 +114,10 @@ premiere : DateTime) : Movie
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>511</x>
-      <y>364</y>
-      <w>210</w>
-      <h>126</h>
+      <x>590</x>
+      <y>520</y>
+      <w>300</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>BookingRepository
 --
@@ -135,10 +135,10 @@ showingTBS : Showing) : Booking
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>770</x>
-      <y>364</y>
-      <w>189</w>
-      <h>126</h>
+      <x>960</x>
+      <y>520</y>
+      <w>270</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>ShowingRepository
 --
@@ -155,10 +155,10 @@ location : Cinema) : Showing
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>595</x>
-      <y>329</y>
-      <w>28</w>
-      <h>49</h>
+      <x>710</x>
+      <y>470</y>
+      <w>40</w>
+      <h>70</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=*
@@ -169,10 +169,10 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>343</x>
-      <y>301</y>
-      <w>28</w>
-      <h>77</h>
+      <x>350</x>
+      <y>430</y>
+      <w>40</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=*
@@ -183,10 +183,10 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>861</x>
-      <y>315</y>
-      <w>28</w>
-      <h>63</h>
+      <x>1090</x>
+      <y>450</y>
+      <w>40</w>
+      <h>90</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=*
@@ -197,10 +197,10 @@ m2=1
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>693</x>
-      <y>252</y>
-      <w>91</w>
-      <h>35</h>
+      <x>850</x>
+      <y>360</y>
+      <w>130</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -211,10 +211,10 @@ m2=0..*
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>819</x>
-      <y>154</y>
-      <w>35</w>
-      <h>77</h>
+      <x>1030</x>
+      <y>220</y>
+      <w>50</w>
+      <h>110</h>
     </coordinates>
     <panel_attributes>lt=-
 m2=1..*
@@ -224,10 +224,10 @@ m2=1..*
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>476</x>
-      <y>147</y>
-      <w>364</w>
-      <h>35</h>
+      <x>540</x>
+      <y>210</y>
+      <w>520</w>
+      <h>50</h>
     </coordinates>
     <panel_attributes>lt=-
 
@@ -237,10 +237,10 @@ m2=1..*
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>476</x>
-      <y>154</y>
-      <w>21</w>
-      <h>105</h>
+      <x>540</x>
+      <y>220</y>
+      <w>30</w>
+      <h>150</h>
     </coordinates>
     <panel_attributes>lt=-
 </panel_attributes>
@@ -249,10 +249,10 @@ m2=1..*
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>441</x>
-      <y>238</y>
-      <w>56</w>
-      <h>28</h>
+      <x>490</x>
+      <y>340</y>
+      <w>80</w>
+      <h>40</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1</panel_attributes>
@@ -261,10 +261,10 @@ m1=1</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>889</x>
-      <y>98</y>
-      <w>35</w>
-      <h>133</h>
+      <x>1130</x>
+      <y>140</y>
+      <w>50</w>
+      <h>190</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
@@ -275,22 +275,22 @@ m2=0..*
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>217</x>
-      <y>525</y>
-      <w>532</w>
-      <h>189</h>
+      <x>170</x>
+      <y>750</y>
+      <w>760</w>
+      <h>270</h>
     </coordinates>
     <panel_attributes>Operation contract
 -
-Operation: ResevérBillet(showingTBS:showing, ticketamount:int, email:string, phonenumber:string,    
-Cross reference: Resevér billeter til en filmforestilling
-Preconditions: Kunden vil gerne reservere billete til en film. 
+Operation: ReservérBillet(showingTBS:showing, ticketamount:int, email:string, phonenumber:string,    
+Cross reference: Reservér billeter til en filmforestilling
+Preconditions: Kunden vil gerne reservere billetter til en film. 
 
 Postconditions:
-- en ResevérBillet instance RB var oprettet.
+- en ReservérBillet instance RB var oprettet.
 - RB var associeret med den valgte showing.
 - RB.Antal, blev til antal af billetter.
-- RB blev associeret med KundeBeskrivelse basret på email og phonenumber.</panel_attributes>
+- RB blev associeret med KundeBeskrivelse baseret på email og phonenumber.</panel_attributes>
     <additional_attributes/>
   </element>
 </diagram>

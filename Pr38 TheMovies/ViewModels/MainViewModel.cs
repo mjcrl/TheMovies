@@ -41,6 +41,7 @@ namespace Pr38_TheMovies.ViewModels
         }
 
 
+
         #region INotifyPropertyChanged
         protected virtual void OnPropertyChanged(string propertyName)
         {
