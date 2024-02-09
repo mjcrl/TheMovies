@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>150</x>
+      <y>120</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;table&gt;&gt;
+CINEMA
+--
+&lt;&lt;PK&gt;&gt; Name : NVarChar(*)
+City : NVarChar(*)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>380</x>
+      <y>120</y>
+      <w>240</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;table&gt;&gt;
+SHOWING
+--
+&lt;&lt;PK&gt;&gt; &lt;&lt;surrogate&gt;&gt; ShowingID : Int
+PlayingDate : DateTime2
+SeatCapacity : Int
+&lt;&lt;FK&gt;&gt; CinemaName : NVarChar(*)
+&lt;&lt;FK&gt;&gt; MovieID : Int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>640</x>
+      <y>120</y>
+      <w>240</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;table&gt;&gt;
+BOOKING
+--
+&lt;&lt;PK&gt;&gt; &lt;&lt;surrogate&gt;&gt; BookingID : Int
+TicketAmount : Int
+Email : NVarChar(*)
+PhoneNumber : NVarChar(20)
+&lt;&lt;FK&gt;&gt; ShowingID : Int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>150</x>
+      <y>230</y>
+      <w>210</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;table&gt;&gt;
+MOVIE
+--
+&lt;&lt;PK&gt;&gt; Title : NVarChar(*)
+Genre : NVarChar(*)
+Duration : Int
+Instructor : NVarChar(100)
+Premiere : DateTime2</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
