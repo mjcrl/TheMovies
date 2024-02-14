@@ -5,6 +5,10 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.Data.SqlClient;
+using System.Data;
+using Microsoft.Extensions.Configuration.Json;
+using Microsoft.Extensions.Configuration;
 
 namespace Pr38_TheMovies.Models
 {
@@ -15,6 +19,13 @@ namespace Pr38_TheMovies.Models
         public BookingRepository()
         {
             bookings = new ObservableCollection<Booking>();
+
+            // ####
+            IConfigurationRoot config = new ConfigurationBuilder().AddJsonFile("appsettings.json").Build();
+
+            string? connectionString = config.GetConnectionString("MyDBConnection");
+            // ####
+
             initRepo();
         }
 
