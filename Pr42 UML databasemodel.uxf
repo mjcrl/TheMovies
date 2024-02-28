@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="15.1">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>30</x>
+      <y>120</y>
+      <w>200</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;table&gt;&gt;
+SUBJECT
+--
+&lt;&lt;PK&gt;&gt; SubjectID : int
+Name : NVarChar(50)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>260</x>
+      <y>120</y>
+      <w>200</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;table&gt;&gt;
+COMPETENCE
+--
+&lt;&lt;PK&gt;&gt; CompetenceID : int
+Level : NVarChar(100)
+&lt;&lt;FK&gt;&gt; SubjectID : int</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>490</x>
+      <y>120</y>
+      <w>200</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;table&gt;&gt;
+SUBSTITUTE
+--
+&lt;&lt;PK&gt;&gt; SubstituteID : int
+Name : NVarChar(104)
+Phone : NVarChar(52)
+CPR : NVarChar(15)
+CertDate : DateTime2
+Status : Bit</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>720</x>
+      <y>120</y>
+      <w>220</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;table&gt;&gt;
+COMPETENCE_SUBSTITUTE
+--
+&lt;&lt;PK/FK&gt;&gt; CompetenceID : int
+&lt;&lt;PK/FK&gt;&gt; SubstituteID : int</panel_attributes>
+    <additional_attributes/>
+  </element>
+</diagram>
