@@ -1,69 +1,171 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <diagram program="umlet" version="15.1">
-  <zoom_level>10</zoom_level>
+  <zoom_level>9</zoom_level>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>30</x>
-      <y>120</y>
-      <w>200</w>
-      <h>110</h>
+      <x>333</x>
+      <y>450</y>
+      <w>225</w>
+      <h>117</h>
     </coordinates>
     <panel_attributes>&lt;&lt;table&gt;&gt;
 SUBJECT
 --
-&lt;&lt;PK&gt;&gt; SubjectID : int
-Name : NVarChar(50)</panel_attributes>
+_&lt;&lt;PK&gt;&gt; &lt;&lt;surrogate&gt;&gt; SubjectID : int_
+Name : NVarChar(50)
+
+--
+&lt;&lt;PK&gt;&gt; PK_Subject()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>260</x>
-      <y>120</y>
-      <w>200</w>
-      <h>110</h>
+      <x>54</x>
+      <y>18</y>
+      <w>288</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>&lt;&lt;table&gt;&gt;
 COMPETENCE
 --
-&lt;&lt;PK&gt;&gt; CompetenceID : int
+_&lt;&lt;PK&gt;&gt; &lt;&lt;surrogate&gt;&gt; CompetenceID : int_
 Level : NVarChar(100)
-&lt;&lt;FK&gt;&gt; SubjectID : int</panel_attributes>
+/&lt;&lt;FK&gt;&gt; SubjectID : int/
+
+--
+&lt;&lt;PK&gt;&gt; PK_Competence()
+&lt;&lt;FK&gt;&gt; FK_Competence_Subject(SubjectID)</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>490</x>
-      <y>120</y>
-      <w>200</w>
-      <h>170</h>
+      <x>558</x>
+      <y>252</y>
+      <w>225</w>
+      <h>180</h>
     </coordinates>
     <panel_attributes>&lt;&lt;table&gt;&gt;
 SUBSTITUTE
 --
-&lt;&lt;PK&gt;&gt; SubstituteID : int
+_&lt;&lt;PK&gt;&gt; &lt;&lt;surrogate&gt;&gt; SubstituteID : int_
 Name : NVarChar(104)
 Phone : NVarChar(52)
 CPR : NVarChar(15)
 CertDate : DateTime2
-Status : Bit</panel_attributes>
+Status : Bit
+
+--
+&lt;&lt;PK&gt;&gt; PK_Substitute()</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>720</x>
-      <y>120</y>
-      <w>220</w>
-      <h>110</h>
+      <x>459</x>
+      <y>18</y>
+      <w>396</w>
+      <h>144</h>
     </coordinates>
     <panel_attributes>&lt;&lt;table&gt;&gt;
-COMPETENCE_SUBSTITUTE
+SUBSTITUTE_COMPETENCE
 --
-&lt;&lt;PK/FK&gt;&gt; CompetenceID : int
-&lt;&lt;PK/FK&gt;&gt; SubstituteID : int</panel_attributes>
+/_&lt;&lt;PK&gt;&gt; &lt;&lt;FK1&gt;&gt; CompetenceID : int_/
+/_&lt;&lt;PK&gt;&gt; &lt;&lt;FK2&gt;&gt; SubstituteID : int_/
+
+--
+&lt;&lt;PK&gt;&gt; PK_SubstituteCompetence()
+&lt;&lt;FK1&gt;&gt; FK_SubstituteCompetence_Competence(CompetenceID)
+&lt;&lt;FK2&gt;&gt; FK_SubstituteCompetence_Substitute(SubstituteID)</panel_attributes>
     <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>225</x>
+      <y>153</y>
+      <w>36</w>
+      <h>126</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>333</x>
+      <y>81</y>
+      <w>144</w>
+      <h>36</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*</panel_attributes>
+    <additional_attributes>10.0;10.0;140.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>657</x>
+      <y>153</y>
+      <w>36</w>
+      <h>117</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+m2=*</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;110.0</additional_attributes>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>45</x>
+      <y>261</y>
+      <w>396</w>
+      <h>144</h>
+    </coordinates>
+    <panel_attributes>&lt;&lt;table&gt;&gt;
+SUBJECT_COMPETENCE
+--
+/_&lt;&lt;PK&gt;&gt; &lt;&lt;FK1&gt;&gt; CompetenceID : int_/
+/_&lt;&lt;PK&gt;&gt; &lt;&lt;FK2&gt;&gt; SubjectID : int_/
+
+--
+&lt;&lt;PK&gt;&gt; PK_SubjectCompetence()
+&lt;&lt;FK1&gt;&gt; FK_SubjectCompetence_Competence(CompetenceID)
+&lt;&lt;FK2&gt;&gt; FK_SubjectCompetence_Substitute(SubstituteID)</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>225</x>
+      <y>396</y>
+      <w>27</w>
+      <h>135</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=*
+
+</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;130.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>225</x>
+      <y>495</y>
+      <w>126</w>
+      <h>45</h>
+    </coordinates>
+    <panel_attributes>lt=-
+m1=1
+
+</panel_attributes>
+    <additional_attributes>120.0;20.0;10.0;20.0</additional_attributes>
   </element>
 </diagram>
